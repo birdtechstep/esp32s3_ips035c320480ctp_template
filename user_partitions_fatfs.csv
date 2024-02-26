@@ -1,0 +1,15 @@
+# Name,	  Type,	SubType, Offset,	Size,	Flags
+nvs,	  data,	nvs,	 0x9000,	0x5000,	
+otadata,  data,	ota,	 0xe000,	0x2000,	
+app0,	  app,	ota_0,	 0x10000,	0x400000,	
+app1,	  app,	ota_1,	 0x410000,	0x400000,	
+ffat,	  data,	fat,	 0x810000,	0x7e0000,	
+coredump, data,	coredump,0xff0000,	0x10000,
+
+#nvs      data  nvs      36864      20480
+#otadata  data  ota      57344      8192
+#app0     app   ota_0    65536      4194304
+#app1     app   ota_1    4259840    4194304
+#ffat     data  fat      8454144    8257536
+#coredump data  coredump 16711680   65536
+#Flash Size:16384k(16M)
